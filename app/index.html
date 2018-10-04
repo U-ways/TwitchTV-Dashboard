@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../greenLabTemplate.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="../greenLabTemplate.js" defer></script>
+  <script type="text/javascript" src="./script.js" defer></script>
+  <title>Tic-Tac-Toe Application w/ Minimax Algorithm</title>
+</head>
+<body>
+  <div id="container">
+    <header class="grid cols-6" id="header">
+      <section id="proj-heading">
+        <h1>
+          TwitchTV Dashboard Application
+        </h1>
+      </section>
+      <details id="proj-details"><summary>Project Info</summary>
+        <section class="grid cols-2 rows-2" id="details-body">
+          <div class="details-column"></div>
+          <div class="details-column"></div>
+        </section>
+      </details>
+    </header>
+    <main id="app">
+      <div class="flex-c" id="app-con">
+        <nav id="user-filter">
+          <ul class="flex-r">
+            <li class="all-active">
+              All
+            </li>
+            <li>
+              Online
+            </li>
+            <li>
+              Offline
+            </li>
+            <li>
+              Refresh
+            </li>
+          </ul>
+        </nav>
+        <section class="flex-c" id="streamers-con">
+          <div id="loading-icons">
+            <i class="fa fa-twitch fa-spin fa-3x fa-fw"></i><i class="fa fa-twitch fa-pulse fa-3x fa-fw"></i><i class="fa fa-twitch fa-spin fa-3x fa-fw"></i><i class="fa fa-twitch fa-pulse fa-3x fa-fw"></i><i class="fa fa-twitch fa-spin fa-3x fa-fw"></i>
+          </div>
+          <ul class="flex-c" id="streamers-list"></ul>
+        </section>
+      </div>
+    </main>
+    <footer id="footer">
+      <p>
+        Last Updated:<time datetime="2017-05-03"> 03/05/2017</time>&nbsp | &nbsp<a href="https://codepen.io/U-ways/" target="_blank"><i aria-hidden="true" class="fa fa-codepen"></i>U-ways</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

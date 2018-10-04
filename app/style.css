@@ -1,0 +1,245 @@
+/* Color Scheme
+================================================================================
+Main Colors:
+#c5dec2 - #95a893
+#3e5050 - #3a4949
+#263331 - #333
+
+Matching R&G:
+#549042 - #8e0000
+*//* App
+==============================================================================*/
+#header {
+  margin-bottom: 0;
+}
+
+#app-con {
+  background-color: rgba(92, 118, 118, 0.48);
+  padding-bottom: 40px;
+}
+
+/* Filter nav for streamers-list
+===========================================*/
+#user-filter {
+  margin: auto;
+  width: 100%;
+  background-color: #3a4949;
+  color: #c5dec2;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0;
+} #user-filter ul {
+  width: inherit;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  user-select: none;
+} #user-filter ul li {
+  padding: 10px 0 7px 25px;
+  text-align: left;
+  width: 20%;
+  min-width: 100px;
+  cursor: pointer;
+} #user-filter ul li:nth-of-type(1) {
+  box-shadow: inset 0px -3px 0px 0px #c5dec2;
+} #user-filter ul li:nth-of-type(2) {
+  box-shadow: inset 0px -3px 0px 0px #549042;
+} #user-filter ul li:nth-of-type(3) {
+  box-shadow: inset 0px -3px 0px 0px #8e0000;
+} #user-filter ul li:last-child {
+  margin-left: auto;
+  padding: 10px 30px 7px 25px;
+  text-align: right;
+} #user-filter ul li:hover {
+  text-shadow: 0px 1px 8px #969696;
+}
+
+/* Streamers-con section
+===========================================*/
+#streamers-con {
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 2%;
+  justify-content: flex-start;
+}
+
+/* streamers-list
+===========================================*/
+#streamers-list {
+  z-index: 10;
+  height:  auto;
+  width:   95%;
+  max-width: 1200px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+#streamers-list li {
+  max-height: 90px;
+  height: calc(10vh + 40px);
+/*   max-height: 85px; */
+  width: 100%;
+  margin-bottom: 5px;
+  cursor: pointer;
+  list-style-type: none;
+  background-color: #c5dec2;
+  overflow: hidden;
+} #streamers-list li:hover {
+  background-color: #cde4ca;
+  opacity: 1;
+}
+
+/* User-item
+===========================================*/
+.user-item {
+  width:  100%;
+  height: inherit;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-decoration: none;
+} .user-item div {
+  height: inherit;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.user-img {
+  width: 20%;
+  min-width: 20%;
+} .user-img i {
+  width: 100%;
+  margin-top: 7px;
+  font-size: 90px;
+  text-align: center;
+  color: #3a4949;
+}
+
+.user-img img {
+  width: 100%;
+  height: inherit;
+  padding: 0px;
+  margin: 0;
+  object-fit: cover;
+  /* Please vote for object-fit support on Edge, be the change.
+   * https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/
+   */
+}
+
+.user-info {
+  width: 80%;
+  max-height: 80px;
+  justify-content: space-around;
+  margin: 0 0 0 1.5%;
+}
+
+.user-info > div {
+  width: 98.5%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-size: 1.35em;
+  font-weight: 600;
+  color: #3a4949;
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin-right: 3%;
+}
+
+.user-extra-info {
+  padding-right: 1.5%;
+  color: #549042;
+  text-align: right;
+  text-transform: lowercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-status {
+  width: 65vw;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.2em;
+  color: #6441A4;
+}
+
+
+
+/* Filter classes
+===========================================*/
+.all-active {
+  box-shadow: inset 0px 5px 0px 0px !important;
+  transition: all .5s;
+}
+
+.online {
+  border-right: 7px solid #549042;
+  opacity: .95;
+  animation: fadeInO .75s;
+  animation-timing-function: ease-in;
+} .online h3 {
+  color: #549042;
+  font-weight: bold;
+} .online-active {
+  box-shadow: inset 0px 5px 0px 0px #549042 !important;
+  transition: all .5s;
+}
+
+.offline {
+  order: 1; /*css-tricks.com/almanac/properties/o/order*/
+  border-right: 7px solid #8e0000;
+  opacity: .6;
+  animation: fadeInF .75s;
+  animation-timing-function: ease-in;
+} .offline h3 {
+  color: #8e0000;
+  font-weight: bold;
+} .offline-active {
+  box-shadow: inset 0px 5px 0px 0px #8e0000 !important;
+  transition: all .5s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Loading-icons
+===========================================*/
+#loading-icons {
+  font-size: 1.5em;
+  margin: auto;
+  color: #c5dec2;
+} #loading-icons i:nth-child(2n) {
+  color: #3e5050;
+}
+
+/* Animation
+===========================================*/
+@keyframes dropdown {
+  from { margin-top: -10px;}
+  to   { margin-top: 0px;  }
+}
+@keyframes fadeInO {
+  from { opacity: 0;  }
+  to   { opacity: .95;}
+}
+@keyframes fadeInF {
+  from { opacity: 0; }
+  to   { opacity: .6;}
+}
+
+/* Network Error
+===========================================*/
+#NetworkErr {
+  position: absolute;
+  top: 45%; bottom: 0;
+  text-transform: capitalize;
+  color: #2c3b38;
+  animation: fadeIn 2s;
+}
