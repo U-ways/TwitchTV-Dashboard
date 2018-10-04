@@ -7,14 +7,12 @@ Overview
 
 **Date created:** Summer 2015/16.
 
-#### Project description:
+### Project description:
 
 This is a dashboard application to track TwitchTV users and viewers using the TwitchTV API. It can be used to track several Twitch channels to display their current status, the number of viewers, followers, category, and what they’re streaming if they’re online.
 
 
-
-Where can I learn more about the TwitchTV API?
---------------------------------------------------------------------------------
+### Where can I learn more about the TwitchTV API?
 
 This project was built with the [Twitch API v5][TwitchTV_APIv5] 2-3 years ago. There is a new Twitch API which I would recommend using instead. Here is some basic guidance:
 
