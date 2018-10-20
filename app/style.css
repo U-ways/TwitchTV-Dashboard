@@ -78,7 +78,6 @@ Matching R&G:
 #streamers-list li {
   max-height: 90px;
   height: calc(10vh + 40px);
-/*   max-height: 85px; */
   width: 100%;
   margin-bottom: 5px;
   cursor: pointer;
@@ -121,9 +120,6 @@ Matching R&G:
   padding: 0px;
   margin: 0;
   object-fit: cover;
-  /* Please vote for object-fit support on Edge, be the change.
-   * https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/
-   */
 }
 
 .user-info {
